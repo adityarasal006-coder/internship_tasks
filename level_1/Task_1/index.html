@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website - Level 1 Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">MyWebsite</a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="container">
+            <h1 class="hero-heading">Welcome to My First Website</h1>
+            <p class="hero-paragraph">
+                This is my very first webpage, built with HTML and CSS as part of my
+                web development journey. I am learning how to create beautiful,
+                responsive websites from scratch. Every expert was once a beginner,
+                and this is where my story begins!
+            </p>
+            <div class="hero-image-wrapper">
+                <img
+                    src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=450&fit=crop"
+                    alt="A laptop on a desk showing code - representing web development"
+                    class="hero-image"
+                >
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-heading">About This Project</h2>
+            <p class="section-paragraph">
+                This project was created as a Level 1 assignment to practice the
+                fundamentals of HTML and CSS. It includes a navigation bar, styled
+                content sections, and an interactive contact form. The goal is to
+                learn how web pages are structured with HTML and made beautiful
+                with CSS.
+            </p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">📄</span>
+                    <h3 class="feature-title">HTML Structure</h3>
+                    <p class="feature-text">
+                        Learning to build the skeleton of web pages using
+                        semantic HTML elements.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🎨</span>
+                    <h3 class="feature-title">CSS Styling</h3>
+                    <p class="feature-text">
+                        Making pages look beautiful with colors, fonts,
+                        spacing, and animations.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">📱</span>
+                    <h3 class="feature-title">Responsive Design</h3>
+                    <p class="feature-text">
+                        Ensuring the website looks great on phones, tablets,
+                        and desktops.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-heading">Contact Me</h2>
+            <p class="section-paragraph">
+                Have a question or want to say hello? Type your message below
+                and hit the submit button!
+            </p>
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="message" class="form-label">Your Message</label>
+                    <input
+                        type="text"
+                        id="message"
+                        name="message"
+                        class="form-input"
+                        placeholder="Type your message here..."
+                        required
+                        minlength="3"
+                    >
+                </div>
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+            <div id="success-message" class="success-message hidden">
+                ✅ Thank you! Your message has been submitted successfully.
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer-text">
+            &copy; 2026 My First Website — Built with HTML, CSS &amp; 💙
+        </p>
+    </footer>
+
+</body>
+</html>

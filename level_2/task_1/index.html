@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 2 - Task 1: Front-end Frameworks</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="page-header py-5 text-center text-white">
+        <div class="container">
+            <span class="badge-custom">Level 2 — Task 1</span>
+            <h1 class="display-6 fw-bold mt-2 mb-2">Front-End Frameworks</h1>
+            <p class="text-secondary-subtle lead fs-6 mb-0">Responsive Card Component (Bulma) &amp; Responsive Grid Layout (Bootstrap 5)</p>
+        </div>
+    </header>
+
+    <main class="py-5">
+        <section class="container mb-5">
+            <div class="text-center mb-4">
+                <span class="badge bg-success-subtle text-success border border-success-subtle px-3 py-2 text-uppercase fw-bold">Part 1 &bull; Bulma Framework</span>
+                <h2 class="fw-bold mt-2">Responsive Card Component</h2>
+                <p class="text-muted">Built using official Bulma card, media object, content, tags, and footer components.</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-5 col-xl-4">
+                    <div class="card bulma-card-custom">
+                        <div class="card-image">
+                            <figure class="image is-16by9">
+                                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=450&fit=crop" alt="Workspace development setup">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media mb-3">
+                                <div class="media-left">
+                                    <figure class="image is-48x48">
+                                        <img class="is-rounded" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop" alt="Author avatar">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-6 mb-0">Devon Lane</p>
+                                    <p class="subtitle is-7 text-muted">@devon_ui</p>
+                                </div>
+                                <div class="media-right">
+                                    <span class="tag is-primary is-light">Featured</span>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h3 class="is-size-5 has-text-weight-bold mb-2">Clean Component Systems</h3>
+                                <p class="is-size-6 has-text-grey">
+                                    Front-end CSS frameworks provide accessible, battle-tested UI primitives to build consistent cross-device components rapidly.
+                                </p>
+                                <div class="tags">
+                                    <span class="tag is-info is-light">#Bulma</span>
+                                    <span class="tag is-link is-light">#CSS</span>
+                                    <span class="tag is-dark is-light">#Cards</span>
+                                </div>
+                                <time datetime="2026-11-06" class="is-size-7 has-text-grey-light">Nov 6, 2026 &bull; 3 min read</time>
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="#grid-section" class="card-footer-item">View Grid</a>
+                            <a href="#" class="card-footer-item">Bookmark</a>
+                            <a href="#" class="card-footer-item">Share</a>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="grid-section" class="py-5 bg-light border-top">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="badge bg-primary-subtle text-primary border border-primary-subtle px-3 py-2 text-uppercase fw-bold">Part 2 &bull; Bootstrap 5 Framework</span>
+                    <h2 class="fw-bold mt-2">Responsive Grid Layout</h2>
+                    <p class="text-muted">A standard 12-column flexbox grid adapting across mobile, tablet, desktop, and widescreen screens.</p>
+                </div>
+
+                <div class="row g-4 mb-4">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="p-4 bg-white rounded-3 shadow-sm border h-100 feature-box">
+                            <div class="feature-icon mb-3">📱</div>
+                            <h4 class="fw-bold h5 mb-2">Mobile-First (col-12)</h4>
+                            <p class="text-muted mb-0">On smaller handheld viewports (&lt;768px), each card spans the full 12 columns for maximum reading comfort.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="p-4 bg-white rounded-3 shadow-sm border h-100 feature-box">
+                            <div class="feature-icon mb-3">💻</div>
+                            <h4 class="fw-bold h5 mb-2">Tablet Layout (col-md-6)</h4>
+                            <p class="text-muted mb-0">At the medium breakpoint (&ge;768px), columns gracefully reflow into a clean 2-column balanced grid.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="p-4 bg-white rounded-3 shadow-sm border h-100 feature-box">
+                            <div class="feature-icon mb-3">🖥️</div>
+                            <h4 class="fw-bold h5 mb-2">Desktop View (col-lg-4)</h4>
+                            <p class="text-muted mb-0">On large screens (&ge;992px), items evenly share width in an equidistant 3-column horizontal presentation.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-3">
+                    <div class="col-6 col-md-3">
+                        <div class="p-3 bg-white rounded border text-center">
+                            <span class="fw-bold fs-4 text-primary d-block">12</span>
+                            <small class="text-muted">Column System</small>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="p-3 bg-white rounded border text-center">
+                            <span class="fw-bold fs-4 text-success d-block">6</span>
+                            <small class="text-muted">Default Breakpoints</small>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="p-3 bg-white rounded border text-center">
+                            <span class="fw-bold fs-4 text-warning d-block">Auto</span>
+                            <small class="text-muted">Flex Gutters (g-4)</small>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="p-3 bg-white rounded border text-center">
+                            <span class="fw-bold fs-4 text-info d-block">100%</span>
+                            <small class="text-muted">Fluid &amp; Responsive</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-4 bg-white text-center border-top">
+        <div class="container">
+            <p class="text-muted mb-0 small">&copy; 2026 Level 2 &bull; Task 1 &bull; Front-End Frameworks (Bulma + Bootstrap)</p>
+        </div>
+    </footer>
+
+</body>
+</html>
